@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<link rel="preload" as="image" href="assets/img/hero1.jpg">
+<link rel="preload" as="image" href="assets/img/hero2.jpg">
+<link rel="preload" as="image" href="assets/img/hero3.jpg">
+<link rel="preload" as="image" href="assets/img/hero4.jpg">
+<link rel="preload" as="image" href="assets/img/hero5.jpg">
+
+<title>Academic Profile</title>
+<link rel="icon" type="image/png" href="assets/img/favicon.jpg">
+  
+<meta property="og:title" content="Academic Profile">
+<meta property="og:description" content="Portfolio & Projects">
+<meta property="og:image" content="https://nguyen-phan-anh.github.io/assets/img/preview.jpg">
+<meta property="og:url" content="https://nguyen-phan-anh.github.io/">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="layout">
+
+
+<aside class="sidebar">
+<div class="profile">
+<img src="assets/img/avatar.jpg" class="avatar">
+<h2>Phan Anh</h2>
+<p class="role">Research Student</p>
+</div>
+
+
+<div id="menu"></div>
+
+</aside>
+
+
+<main class="main">
+<section class="hero" id="hero">
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<h1>Hi, I'm Phan Anh</h1>
+<p>Information Systems • Data Analytics • English</p>
+<a href="CV.pdf" class="btn" download>Download CV</a>
+</div>
+</section>
+</main>
+
+
+</div>
+
+<script>
+const heroImages = [
+  "assets/img/hero1.jpg",
+  "assets/img/hero2.jpg",
+  "assets/img/hero3.jpg",
+  "assets/img/hero4.jpg",
+  "assets/img/hero5.jpg"
+];
+
+let current = 0;
+const hero = document.getElementById("hero");
+
+function changeHero(){
+  hero.style.backgroundImage = `url('${heroImages[current]}')`;
+  hero.style.backgroundSize = "cover";
+  hero.style.backgroundPosition = "center";
+  hero.style.transition = "background-image 1s ease-in-out";
+  current = (current + 1) % heroImages.length;
+}
+
+changeHero(); // load ảnh đầu
+setInterval(changeHero, 5000); // 5s đổi ảnh
+</script>
+
+<script src="assets/js/main.js"></script>
+
+<script>
+fetch("/assets/components/menu.html")
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("menu").innerHTML = data;
+
+    const links = document.querySelectorAll("#menu a");
+
+    // URL hiện tại
+    let currentPath = window.location.pathname;
+
+    // chuẩn hóa path
+    currentPath = currentPath
+      .replace(/index\.html$/, "")
+      .replace(/\.html$/, "")
+      .replace(/\/$/, "");
+
+    links.forEach(link => {
+      let linkPath = link.getAttribute("href");
+
+      linkPath = linkPath
+        .replace(/index\.html$/, "")
+        .replace(/\.html$/, "")
+        .replace(/\/$/, "");
+
+      if(linkPath === currentPath){
+        link.classList.add("active");
+      }
+    });
+  });
+</script> 
+  
+  
+</body>
+</html>
