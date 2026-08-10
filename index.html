@@ -1,116 +1,627 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<link rel="preload" as="image" href="assets/img/hero1.jpg">
-<link rel="preload" as="image" href="assets/img/hero2.jpg">
-<link rel="preload" as="image" href="assets/img/hero3.jpg">
-<link rel="preload" as="image" href="assets/img/hero4.jpg">
-<link rel="preload" as="image" href="assets/img/hero5.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Academic Profile</title>
-<link rel="icon" type="image/png" href="assets/img/favicon.jpg">
-  
-<meta property="og:title" content="Academic Profile">
-<meta property="og:description" content="Portfolio & Projects">
-<meta property="og:image" content="https://vungocthuha.github.io/assets/img/preview.jpg">
-<meta property="og:url" content="https://vungocthuha.github.io/">
-<meta property="og:type" content="website">
+    <title>Phan Anh</title>
 
-<meta name="twitter:card" content="summary_large_image">
+    <meta name="description" content="Phan Anh - Personal Academic Website">
 
-<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-<div class="layout">
+
+    <!-- =========================================================
+         SIDEBAR
+    ========================================================== -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-profile">
+
+            <a href="#home" class="sidebar-name">
+                Phan Anh
+            </a>
+
+            <p class="sidebar-title">
+                Graduate Student
+            </p>
+
+        </div>
 
 
-<aside class="sidebar">
-<div class="profile">
-<img src="assets/img/avatar.jpg" class="avatar">
-<h2>Vũ Ngọc Thu Hà</h2>
-<p class="role">Research Student</p>
-</div>
+        <nav class="sidebar-nav">
+
+            <a href="#home" class="nav-link active">
+                Home
+            </a>
+
+            <a href="#about" class="nav-link">
+                About
+            </a>
+
+            <a href="#education" class="nav-link">
+                Education
+            </a>
+
+            <a href="#research" class="nav-link">
+                Research
+            </a>
+
+            <a href="#publications" class="nav-link">
+                Publications
+            </a>
+
+            <a href="#projects" class="nav-link">
+                Projects
+            </a>
+
+            <a href="#experience" class="nav-link">
+                Experience
+            </a>
+
+            <a href="#awards" class="nav-link">
+                Awards
+            </a>
+
+            <a href="#contact" class="nav-link">
+                Contact
+            </a>
+
+        </nav>
 
 
-<div id="menu"></div>
+        <div class="sidebar-social">
 
-</aside>
+            <a href="#" aria-label="GitHub">
+                GitHub
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+                LinkedIn
+            </a>
+
+            <a href="mailto:your@email.com" aria-label="Email">
+                Email
+            </a>
+
+        </div>
+
+    </aside>
 
 
-<main class="main">
-<section class="hero" id="hero">
-<div class="hero-overlay"></div>
-<div class="hero-content">
-<h1>Hi, I'm Thu Hà</h1>
-<p>Nghề yêu thích 1 • Nghề yêu thích 2 • Nghề yêu thích 3</p>
-<a href="CV-VuNgocThuHa.pdf" class="btn" download>Download CV</a>
-</div>
-</section>
-</main>
+    <!-- =========================================================
+         MAIN CONTENT
+    ========================================================== -->
+
+    <main class="main-content">
 
 
-</div>
+        <!-- =====================================================
+             HOME
+        ====================================================== -->
 
-<script>
-const heroImages = [
-  "assets/img/hero1.jpg",
-  "assets/img/hero2.jpg",
-  "assets/img/hero3.jpg",
-  "assets/img/hero4.jpg",
-  "assets/img/hero5.jpg"
-];
+        <section id="home" class="section hero-section">
 
-let current = 0;
-const hero = document.getElementById("hero");
+            <div class="hero-content">
 
-function changeHero(){
-  hero.style.backgroundImage = `url('${heroImages[current]}')`;
-  hero.style.backgroundSize = "cover";
-  hero.style.backgroundPosition = "center";
-  hero.style.transition = "background-image 1s ease-in-out";
-  current = (current + 1) % heroImages.length;
-}
+                <p class="hero-greeting">
+                    Hi, I'm
+                </p>
 
-changeHero(); // load ảnh đầu
-setInterval(changeHero, 5000); // 5s đổi ảnh
-</script>
+                <h1>
+                    Phan Anh
+                </h1>
 
-<script src="assets/js/main.js"></script>
+                <p class="hero-description">
+                    Graduate Student at National Tsing Hua University
+                </p>
 
-<script>
-fetch("/assets/components/menu.html")
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("menu").innerHTML = data;
+                <p class="hero-text">
+                    Welcome to my personal academic website.
+                    I am interested in research, technology,
+                    and academic development.
+                </p>
 
-    const links = document.querySelectorAll("#menu a");
+                <div class="hero-links">
 
-    // URL hiện tại
-    let currentPath = window.location.pathname;
+                    <a href="#" class="button">
+                        Download CV
+                    </a>
 
-    // chuẩn hóa path
-    currentPath = currentPath
-      .replace(/index\.html$/, "")
-      .replace(/\.html$/, "")
-      .replace(/\/$/, "");
+                    <a href="#about" class="button button-secondary">
+                        More About Me
+                    </a>
 
-    links.forEach(link => {
-      let linkPath = link.getAttribute("href");
+                </div>
 
-      linkPath = linkPath
-        .replace(/index\.html$/, "")
-        .replace(/\.html$/, "")
-        .replace(/\/$/, "");
+            </div>
 
-      if(linkPath === currentPath){
-        link.classList.add("active");
-      }
-    });
-  });
-</script> 
-  
-  
+        </section>
+
+
+        <!-- =====================================================
+             ABOUT
+        ====================================================== -->
+
+        <section id="about" class="section">
+
+            <div class="section-header">
+
+                <span class="section-number">
+                    01
+                </span>
+
+                <h2>
+                    About
+                </h2>
+
+            </div>
+
+
+            <div class="section-content">
+
+                <p>
+                    I am a graduate student at National Tsing Hua
+                    University. My academic interests include
+                    computer science, mathematics, research,
+                    and education.
+                </p>
+
+                <p>
+                    This website serves as my personal academic
+                    profile, where I share my research interests,
+                    projects, academic experience, and other work.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             EDUCATION
+        ====================================================== -->
+
+        <section id="education" class="section">
+
+            <div class="section-header">
+
+                <span class="section-number">
+                    02
+                </span>
+
+                <h2>
+                    Education
+                </h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <article class="timeline-item">
+
+                    <div class="timeline-date">
+                        2026 – Present
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            National Tsing Hua University
+                        </h3>
+
+                        <p class="timeline-subtitle">
+                            Master's Degree
+                        </p>
+
+                        <p>
+                            Department / Program
+                        </p>
+
+                        <p>
+                            Hsinchu, Taiwan
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="timeline-item">
+
+                    <div class="timeline-date">
+                        2020 – 2025
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Hanoi University of Science and Technology
+                        </h3>
+
+                        <p class="timeline-subtitle">
+                            Bachelor of Science
+                        </p>
+
+                        <p>
+                            Informatics and Mathematics
+                        </p>
+
+                        <p>
+                            Hanoi, Vietnam
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             RESEARCH
+        ====================================================== -->
+
+        <section id="research" class="section">
+
+            <div class="section-header">
+
+                <span class="section-number">
+                    03
+                </span>
+
+                <h2>
+                    Research
+                </h2>
+
+            </div>
+
+
+            <div class="section-content">
+
+                <p>
+                    My research interests include:
+                </p>
+
+
+                <ul class="research-list">
+
+                    <li>
+                        Research Area 01
+                    </li>
+
+                    <li>
+                        Research Area 02
+                    </li>
+
+                    <li>
+                        Research Area 03
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PUBLICATIONS
+        ====================================================== -->
+
+        <section id="publications" class="section">
+
+            <div class="section-header">
+
+                <span class="section-number">
+                    04
+                </span>
+
+                <h2>
+                    Publications
+                </h2>
+
+            </div>
+
+
+            <div class="publication-list">
+
+
+                <article class="publication-item">
+
+                    <span class="publication-year">
+                        2026
+                    </span>
+
+                    <div class="publication-content">
+
+                        <h3>
+                            Publication Title
+                        </h3>
+
+                        <p>
+                            Author Name, Author Name, Phan Anh
+                        </p>
+
+                        <p class="publication-venue">
+                            Conference / Journal Name
+                        </p>
+
+                        <div class="publication-links">
+
+                            <a href="#">
+                                Paper
+                            </a>
+
+                            <a href="#">
+                                Code
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PROJECTS
+        ====================================================== -->
+
+        <section id="projects" class="section">
+
+            <div class="section-header">
+
+                <span class="section-number">
+                    05
+                </span>
+
+                <h2>
+                    Projects
+                </h2>
+
+            </div>
+
+
+            <div class="project-list">
+
+
+                <article class="project-item">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/img/project-placeholder.jpg"
+                            alt="Project"
+                        >
+
+                    </div>
+
+
+                    <div class="project-content">
+
+                        <span class="project-category">
+                            Project
+                        </span>
+
+                        <h3>
+                            Project Title
+                        </h3>
+
+                        <p>
+                            A short description of the project,
+                            its purpose, and the technologies used.
+                        </p>
+
+                        <div class="project-links">
+
+                            <a href="#">
+                                View Project
+                            </a>
+
+                            <a href="#">
+                                GitHub
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             EXPERIENCE
+        ====================================================== -->
+
+        <section id="experience" class="section">
+
+            <div class="section-header">
+
+                <span class="section-number">
+                    06
+                </span>
+
+                <h2>
+                    Experience
+                </h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <article class="timeline-item">
+
+                    <div class="timeline-date">
+                        2023 – Present
+                    </div>
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            Position / Organization
+                        </h3>
+
+                        <p class="timeline-subtitle">
+                            Role
+                        </p>
+
+                        <p>
+                            Description of your responsibilities,
+                            achievements, and contributions.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             AWARDS
+        ====================================================== -->
+
+        <section id="awards" class="section">
+
+            <div class="section-header">
+
+                <span class="section-number">
+                    07
+                </span>
+
+                <h2>
+                    Awards
+                </h2>
+
+            </div>
+
+
+            <div class="award-list">
+
+
+                <article class="award-item">
+
+                    <div class="award-year">
+                        2025
+                    </div>
+
+                    <div class="award-content">
+
+                        <h3>
+                            Award / Achievement
+                        </h3>
+
+                        <p>
+                            Organization or institution
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONTACT
+        ====================================================== -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="section-header">
+
+                <span class="section-number">
+                    08
+                </span>
+
+                <h2>
+                    Contact
+                </h2>
+
+            </div>
+
+
+            <div class="contact-content">
+
+                <p>
+                    Feel free to get in touch with me.
+                </p>
+
+
+                <div class="contact-links">
+
+                    <a href="mailto:your@email.com">
+                        your@email.com
+                    </a>
+
+                    <a href="#">
+                        GitHub
+                    </a>
+
+                    <a href="#">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FOOTER
+        ====================================================== -->
+
+        <footer class="footer">
+
+            <p>
+                © 2026 Phan Anh. All rights reserved.
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script src="assets/js/script.js"></script>
+
 </body>
+
 </html>
+```
