@@ -1,131 +1,101 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Vu Ngoc Thu Ha</title>
 
     <meta name="description"
-        content="Vu Ngoc Thu Ha - Education Researcher">
+          content="Vu Ngoc Thu Ha - Education Researcher">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================================================
-         SIDEBAR
-    ========================================================== -->
-
     <aside class="sidebar">
 
-        <div class="sidebar-profile">
-
-            <a href="#home" class="sidebar-name">
-                Vu Ngoc Thu Ha
+        <div class="sidebar-top">
+            <a href="#home" class="logo">
+                VU NGOC THU HA
             </a>
 
-            <p class="sidebar-title">
+            <p class="sidebar-role">
                 Education Researcher
             </p>
-
         </div>
 
-
-        <nav class="sidebar-nav">
-
-            <a href="#home" class="nav-link active">
-                Home
-            </a>
-
-            <a href="#about" class="nav-link">
-                Profile
-            </a>
-
-            <a href="#research" class="nav-link">
-                Research
-            </a>
-
-            <a href="#education" class="nav-link">
-                Education
-            </a>
-
-            <a href="#experience" class="nav-link">
-                Experience
-            </a>
-
-            <a href="#publications" class="nav-link">
-                Publications
-            </a>
-
-            <a href="#activities" class="nav-link">
-                Activities
-            </a>
-
-            <a href="#contact" class="nav-link">
-                Contact
-            </a>
-
+        <nav class="navigation">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#profile" class="nav-link">Profile</a>
+            <a href="#research" class="nav-link">Research</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#publications" class="nav-link">Publications</a>
+            <a href="#activities" class="nav-link">Activities</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
 
-
-        <div class="sidebar-social">
-
+        <div class="sidebar-bottom">
             <a href="mailto:vungocthuha2002@gmail.com">
-                Email
+                vungocthuha2002@gmail.com
             </a>
-
         </div>
 
     </aside>
 
 
-    <!-- =========================================================
-         MAIN CONTENT
-    ========================================================== -->
-
-    <main class="main-content">
+    <main class="main">
 
 
-        <!-- =====================================================
-             HOME
-        ====================================================== -->
+        <!-- HOME -->
 
-        <section id="home" class="section hero-section">
+        <section id="home" class="hero">
+
+            <div class="hero-image">
+                <img src="profile.jpg" alt="Vu Ngoc Thu Ha">
+            </div>
 
             <div class="hero-content">
 
-                <p class="hero-greeting">
-                    Hello, I'm
+                <p class="eyebrow">
+                    HELLO, I'M
                 </p>
 
                 <h1>
                     Vu Ngoc Thu Ha
                 </h1>
 
-                <p class="hero-description">
+                <p class="hero-title">
                     Education Researcher
                 </p>
 
-                <p class="hero-text">
+                <p class="hero-location">
+                    <span>Hanoi, Vietnam</span>
+                    <span>•</span>
+                    <a href="mailto:vungocthuha2002@gmail.com">
+                        vungocthuha2002@gmail.com
+                    </a>
+                    <span>•</span>
+                    <a href="tel:+84944112409">
+                        (+84) 944 112 409
+                    </a>
+                </p>
+
+                <p class="hero-description">
                     Exploring educational technology, AI in education,
                     Design Thinking, and student-centered learning.
                 </p>
 
-                <div class="hero-links">
-
-                    <a href="#about" class="button">
+                <div class="hero-buttons">
+                    <a href="#profile" class="button button-dark">
                         About Me
                     </a>
 
-                    <a href="#research" class="button button-secondary">
+                    <a href="#research" class="button">
                         Research Interests
                     </a>
-
                 </div>
 
             </div>
@@ -133,26 +103,16 @@
         </section>
 
 
-        <!-- =====================================================
-             PROFILE
-        ====================================================== -->
+        <!-- PROFILE -->
 
-        <section id="about" class="section">
+        <section id="profile" class="section">
 
-            <div class="section-header">
-
-                <span class="section-number">
-                    01
-                </span>
-
-                <h2>
-                    Profile
-                </h2>
-
+            <div class="section-heading">
+                <span>01</span>
+                <h2>Profile</h2>
             </div>
 
-
-            <div class="section-content">
+            <div class="content">
 
                 <p>
                     I hold a B.Eng. in Chemical Engineering and have
@@ -161,10 +121,10 @@
                 </p>
 
                 <p>
-                    My experience in the classroom gradually led me
-                    to become interested in how teaching methods can
-                    be adapted to different learners and how learning
-                    can be made more engaging and effective.
+                    My experience in the classroom gradually led me to
+                    become interested in how teaching methods can be
+                    adapted to different learners and how learning can
+                    be made more engaging and effective.
                 </p>
 
                 <p>
@@ -182,102 +142,58 @@
         </section>
 
 
-        <!-- =====================================================
-             RESEARCH INTEREST
-        ====================================================== -->
+        <!-- RESEARCH -->
 
         <section id="research" class="section">
 
-            <div class="section-header">
-
-                <span class="section-number">
-                    02
-                </span>
-
-                <h2>
-                    Research Interest
-                </h2>
-
+            <div class="section-heading">
+                <span>02</span>
+                <h2>Research Interest</h2>
             </div>
 
+            <div class="research-tags">
 
-            <div class="section-content">
-
-                <ul class="research-list">
-
-                    <li>
-                        Educational Technology
-                    </li>
-
-                    <li>
-                        AI in Education
-                    </li>
-
-                    <li>
-                        Design Thinking in Education
-                    </li>
-
-                    <li>
-                        Student-Centered Learning
-                    </li>
-
-                    <li>
-                        Higher Education
-                    </li>
-
-                    <li>
-                        STEM Education
-                    </li>
-
-                </ul>
+                <span>Educational Technology</span>
+                <span>AI in Education</span>
+                <span>Design Thinking in Education</span>
+                <span>Student-Centered Learning</span>
+                <span>Higher Education</span>
+                <span>STEM Education</span>
 
             </div>
 
         </section>
 
 
-        <!-- =====================================================
-             EDUCATION
-        ====================================================== -->
+        <!-- EDUCATION -->
 
         <section id="education" class="section">
 
-            <div class="section-header">
-
-                <span class="section-number">
-                    03
-                </span>
-
-                <h2>
-                    Education
-                </h2>
-
+            <div class="section-heading">
+                <span>03</span>
+                <h2>Education</h2>
             </div>
 
+            <div class="entries">
 
-            <div class="timeline">
+                <article class="entry">
 
-
-                <!-- HUST -->
-
-                <article class="timeline-item">
-
-                    <div class="timeline-date">
+                    <div class="entry-date">
                         Sep 2020 – Jul 2025
                     </div>
 
-                    <div class="timeline-content">
+                    <div class="entry-body">
 
                         <h3>
                             Hanoi University of Science and Technology
                         </h3>
 
-                        <p class="timeline-subtitle">
+                        <p class="entry-title">
                             Bachelor of Engineering in Chemical Engineering
                         </p>
 
                         <p>
-                            GPA: 3.3 / 4
+                            <strong>GPA:</strong> 3.3 / 4
                         </p>
 
                         <p>
@@ -292,15 +208,13 @@
                 </article>
 
 
-                <!-- HIGH SCHOOL -->
+                <article class="entry">
 
-                <article class="timeline-item">
-
-                    <div class="timeline-date">
+                    <div class="entry-date">
                         Aug 2017 – Jun 2020
                     </div>
 
-                    <div class="timeline-content">
+                    <div class="entry-body">
 
                         <h3>
                             High School for Gifted Students –
@@ -308,101 +222,89 @@
                         </h3>
 
                         <p>
-                            GPA: 9.2 / 10
+                            <strong>GPA:</strong> 9.2 / 10
                         </p>
 
                     </div>
 
                 </article>
-
 
             </div>
 
         </section>
 
 
-        <!-- =====================================================
-             EXPERIENCE
-        ====================================================== -->
+        <!-- EXPERIENCE -->
 
         <section id="experience" class="section">
 
-            <div class="section-header">
-
-                <span class="section-number">
-                    04
-                </span>
-
-                <h2>
-                    Experience
-                </h2>
-
+            <div class="section-heading">
+                <span>04</span>
+                <h2>Experience</h2>
             </div>
 
+            <div class="entries">
 
-            <div class="timeline">
+                <article class="entry">
 
-
-                <!-- MATH QD REDCONS -->
-
-                <article class="timeline-item">
-
-                    <div class="timeline-date">
+                    <div class="entry-date">
                         Sep 2020 – Present
                     </div>
 
-                    <div class="timeline-content">
+                    <div class="entry-body">
 
                         <h3>
                             Math QD Redcons – Education Center
                         </h3>
 
-                        <p class="timeline-subtitle">
+                        <p class="entry-title">
                             Teaching Assistant → Teacher &amp; Class Manager
                         </p>
 
-                        <p>
-                            Design and prepare lesson plans, teaching
-                            materials, interactive exercises, and
-                            educational games.
-                        </p>
+                        <ul>
+                            <li>
+                                Design and prepare lesson plans,
+                                teaching materials, interactive
+                                exercises, and educational games.
+                            </li>
 
-                        <p>
-                            Adapt teaching methods and materials to
-                            students’ learning levels and individual needs.
-                        </p>
+                            <li>
+                                Adapt teaching methods and materials
+                                to students’ learning levels and
+                                individual needs.
+                            </li>
 
-                        <p>
-                            Develop differentiated learning activities
-                            for high-achieving and struggling students.
-                        </p>
+                            <li>
+                                Develop differentiated learning
+                                activities for high-achieving and
+                                struggling students.
+                            </li>
 
-                        <p>
-                            Monitor student progress and manage classroom
-                            activities.
-                        </p>
+                            <li>
+                                Monitor student progress and manage
+                                classroom activities.
+                            </li>
+                        </ul>
 
                     </div>
 
                 </article>
 
 
-                <!-- DESIGN THINKING PROJECT -->
+                <article class="entry">
 
-                <article class="timeline-item">
-
-                    <div class="timeline-date">
+                    <div class="entry-date">
                         Jun 2022 – Jul 2024
                     </div>
 
-                    <div class="timeline-content">
+                    <div class="entry-body">
 
                         <h3>
-                            Research Project – Hanoi University of
-                            Science and Technology (HUST)
+                            Research Project –
+                            Hanoi University of Science and Technology
                         </h3>
 
-                        <p class="timeline-subtitle">
+                        <p class="entry-title">
                             Project Member
                         </p>
 
@@ -418,33 +320,34 @@
                             M.Arch., Architect Tieu Thanh Le
                         </p>
 
-                        <p>
-                            Supported the development and implementation
-                            of Design Thinking-based learning activities,
-                            student projects, and teaching materials.
-                        </p>
+                        <ul>
+                            <li>
+                                Supported the development and
+                                implementation of Design Thinking-based
+                                learning activities, student projects,
+                                and teaching materials.
+                            </li>
+                        </ul>
 
                     </div>
 
                 </article>
 
 
-                <!-- VAST -->
+                <article class="entry">
 
-                <article class="timeline-item">
-
-                    <div class="timeline-date">
+                    <div class="entry-date">
                         Feb 2025 – Jul 2025
                     </div>
 
-                    <div class="timeline-content">
+                    <div class="entry-body">
 
                         <h3>
                             Vietnam Academy of Science and Technology
                             (VAST)
                         </h3>
 
-                        <p class="timeline-subtitle">
+                        <p class="entry-title">
                             Research Intern
                         </p>
 
@@ -454,62 +357,50 @@
                             Assoc. Prof. Dang Quang Le
                         </p>
 
-                        <p>
-                            Conducted experimental research and data
-                            analysis under academic supervision.
-                        </p>
+                        <ul>
+                            <li>
+                                Conducted experimental research and
+                                data analysis under academic supervision.
+                            </li>
 
-                        <p>
-                            Supported research planning, experimental
-                            procedures, and scientific documentation.
-                        </p>
+                            <li>
+                                Supported research planning, experimental
+                                procedures, and scientific documentation.
+                            </li>
 
-                        <p>
-                            Analysed research findings and contributed
-                            to academic reports and research outputs.
-                        </p>
+                            <li>
+                                Analysed research findings and contributed
+                                to academic reports and research outputs.
+                            </li>
+                        </ul>
 
                     </div>
 
                 </article>
-
 
             </div>
 
         </section>
 
 
-        <!-- =====================================================
-             PUBLICATIONS
-        ====================================================== -->
+        <!-- PUBLICATIONS -->
 
         <section id="publications" class="section">
 
-            <div class="section-header">
-
-                <span class="section-number">
-                    05
-                </span>
-
-                <h2>
-                    Publications
-                </h2>
-
+            <div class="section-heading">
+                <span>05</span>
+                <h2>Publications</h2>
             </div>
 
+            <div class="publications">
 
-            <div class="publication-list">
+                <article class="publication">
 
-
-                <!-- CONFERENCE 2026 -->
-
-                <article class="publication-item">
-
-                    <span class="publication-year">
+                    <div class="publication-year">
                         2026
-                    </span>
+                    </div>
 
-                    <div class="publication-content">
+                    <div class="publication-body">
 
                         <h3>
                             A Proposed Model for Integrating AI into
@@ -520,7 +411,7 @@
                             Vu, N. T. H. &amp; La, T. N. A.
                         </p>
 
-                        <p class="publication-venue">
+                        <p class="venue">
                             International Conference on Emerging
                             Technologies and Education (ICETE 2026),
                             Melbourne Institute of Technology, Australia.
@@ -531,15 +422,13 @@
                 </article>
 
 
-                <!-- CONFERENCE 2024 -->
+                <article class="publication">
 
-                <article class="publication-item">
-
-                    <span class="publication-year">
+                    <div class="publication-year">
                         2024
-                    </span>
+                    </div>
 
-                    <div class="publication-content">
+                    <div class="publication-body">
 
                         <h3>
                             Application of Design Thinking as a Teaching
@@ -550,7 +439,7 @@
                             La, T. N. A., Le, T. T., &amp; Vu, N. T. H.
                         </p>
 
-                        <p class="publication-venue">
+                        <p class="venue">
                             International Conference on Educational
                             Science and Foreign Language Teaching
                             (ICEF 2024), Hanoi University of Science
@@ -562,15 +451,13 @@
                 </article>
 
 
-                <!-- JOURNAL 2025 -->
+                <article class="publication">
 
-                <article class="publication-item">
-
-                    <span class="publication-year">
+                    <div class="publication-year">
                         2025
-                    </span>
+                    </div>
 
-                    <div class="publication-content">
+                    <div class="publication-body">
 
                         <h3>
                             Development of a Herbal Nanoemulsion and
@@ -584,37 +471,32 @@
                             &amp; Quang, L. D.
                         </p>
 
-                        <p class="publication-venue">
+                        <p class="venue">
                             Journal of Science and Technology –
                             Hanoi University of Industry, 61(5B),
                             273–279.
                         </p>
 
-                        <div class="publication-links">
-
-                            <a
-                                href="https://doi.org/10.57001/huih5804.2025.179"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                DOI
-                            </a>
-
-                        </div>
+                        <a
+                            class="doi"
+                            href="https://doi.org/10.57001/huih5804.2025.179"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            DOI →
+                        </a>
 
                     </div>
 
                 </article>
 
 
-                <!-- JOURNAL 2025 -->
+                <article class="publication">
 
-                <article class="publication-item">
-
-                    <span class="publication-year">
+                    <div class="publication-year">
                         2025
-                    </span>
+                    </div>
 
-                    <div class="publication-content">
+                    <div class="publication-body">
 
                         <h3>
                             Preparation and In Vitro Test of Insecticidal
@@ -628,193 +510,147 @@
                             &amp; Quang, L. D.
                         </p>
 
-                        <p class="publication-venue">
+                        <p class="venue">
                             TNU Journal of Science and Technology,
                             230(14), 249–255.
                         </p>
 
-                        <div class="publication-links">
-
-                            <a
-                                href="https://doi.org/10.34238/tnu-jst.13091"
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                DOI
-                            </a>
-
-                        </div>
+                        <a
+                            class="doi"
+                            href="https://doi.org/10.34238/tnu-jst.13091"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            DOI →
+                        </a>
 
                     </div>
 
                 </article>
-
 
             </div>
 
         </section>
 
 
-        <!-- =====================================================
-             LEADERSHIP & ACTIVITIES
-        ====================================================== -->
+        <!-- ACTIVITIES -->
 
         <section id="activities" class="section">
 
-            <div class="section-header">
-
-                <span class="section-number">
-                    06
-                </span>
-
-                <h2>
-                    Leadership &amp; Activities
-                </h2>
-
+            <div class="section-heading">
+                <span>06</span>
+                <h2>Leadership &amp; Activities</h2>
             </div>
 
+            <div class="entries">
 
-            <div class="timeline">
+                <article class="entry">
 
-
-                <!-- ICTSV -->
-
-                <article class="timeline-item">
-
-                    <div class="timeline-date">
+                    <div class="entry-date">
                         Oct 2020 – Nov 2023
                     </div>
 
-                    <div class="timeline-content">
+                    <div class="entry-body">
 
                         <h3>
                             ICTSV Support &amp; Development Team
                         </h3>
 
-                        <p class="timeline-subtitle">
+                        <p class="entry-title">
                             Vice President
                         </p>
 
-                        <p>
-                            Coordinated academic and student activities
-                            involving up to approximately 2,000
-                            participants.
-                        </p>
+                        <ul>
+                            <li>
+                                Coordinated academic and student
+                                activities involving up to approximately
+                                2,000 participants.
+                            </li>
 
-                        <p>
-                            Worked with university departments,
-                            lecturers, students, and external partners.
-                        </p>
+                            <li>
+                                Worked with university departments,
+                                lecturers, students, and external partners.
+                            </li>
+                        </ul>
 
                     </div>
 
                 </article>
 
 
-                <!-- SILEN'T -->
+                <article class="entry">
 
-                <article class="timeline-item">
-
-                    <div class="timeline-date">
+                    <div class="entry-date">
                         Oct 2020 – Dec 2020
                     </div>
 
-                    <div class="timeline-content">
+                    <div class="entry-body">
 
                         <h3>
                             SILEN'T Workshop
                         </h3>
 
-                        <p class="timeline-subtitle">
+                        <p class="entry-title">
                             Head Organizer
                         </p>
 
-                        <p>
-                            Led an educational workshop on social
-                            awareness topics and coordinated speakers,
-                            content, and communications.
-                        </p>
+                        <ul>
+                            <li>
+                                Led an educational workshop on social
+                                awareness topics and coordinated speakers,
+                                content, and communications.
+                            </li>
 
-                        <p>
-                            Engaged approximately 500 student
-                            participants.
-                        </p>
+                            <li>
+                                Engaged approximately 500 student
+                                participants.
+                            </li>
+                        </ul>
 
                     </div>
 
                 </article>
 
-
             </div>
 
         </section>
 
 
-        <!-- =====================================================
-             CONTACT
-        ====================================================== -->
+        <!-- CONTACT -->
 
         <section id="contact" class="section contact-section">
 
-            <div class="section-header">
-
-                <span class="section-number">
-                    07
-                </span>
-
-                <h2>
-                    Contact
-                </h2>
-
+            <div class="section-heading">
+                <span>07</span>
+                <h2>Contact</h2>
             </div>
 
-
-            <div class="contact-content">
+            <div class="contact">
 
                 <p>
                     Hanoi, Vietnam
                 </p>
 
+                <a href="mailto:vungocthuha2002@gmail.com">
+                    vungocthuha2002@gmail.com
+                </a>
 
-                <div class="contact-links">
-
-                    <a href="mailto:vungocthuha2002@gmail.com">
-                        vungocthuha2002@gmail.com
-                    </a>
-
-                    <a href="tel:+84944112409">
-                        (+84) 944 112 409
-                    </a>
-
-                </div>
+                <a href="tel:+84944112409">
+                    (+84) 944 112 409
+                </a>
 
             </div>
 
         </section>
 
 
-        <!-- =====================================================
-             FOOTER
-        ====================================================== -->
-
         <footer class="footer">
-
-            <p>
-                © 2026 Vu Ngoc Thu Ha. All rights reserved.
-            </p>
-
+            © 2026 Vu Ngoc Thu Ha
         </footer>
-
 
     </main>
 
 
-    <!-- =========================================================
-         JAVASCRIPT
-    ========================================================== -->
-
-    <script src="assets/js/script.js"></script>
+    <script src="script.js"></script>
 
 </body>
-
 </html>
-```
