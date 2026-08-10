@@ -1,113 +1,84 @@
-```javascript
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
     const navLinks = document.querySelectorAll(".nav-link");
     const sections = document.querySelectorAll("main section[id]");
 
 
-    /* =========================================================
-       SMOOTH SCROLL
-    ========================================================== */
+    /* Smooth scrolling */
 
-    navLinks.forEach(link => {
+    navLinks.forEach(function (link) {
 
-        link.addEventListener("click", event => {
+        link.addEventListener("click", function (event) {
 
-            const targetId = link.getAttribute("href");
+            const targetId = this.getAttribute("href");
 
             if (!targetId || !targetId.startsWith("#")) {
                 return;
             }
 
-            const targetSection = document.querySelector(targetId);
+            const target = document.querySelector(targetId);
 
-            if (!targetSection) {
+            if (!target) {
                 return;
             }
 
             event.preventDefault();
 
-            targetSection.scrollIntoView({
+            target.scrollIntoView({
                 behavior: "smooth",
                 block: "start"
             });
+
+            history.replaceState(
+                null,
+                "",
+                targetId
+            );
 
         });
 
     });
 
 
-    /* =========================================================
-       ACTIVE NAVIGATION ON SCROLL
-    ========================================================== */
+    /* Active navigation */
 
-    const updateActiveSection = () => {
+    function updateActiveNavigation() {
 
         const scrollPosition =
             window.scrollY + window.innerHeight * 0.35;
 
         let currentSection = sections[0];
 
-        sections.forEach(section => {
+        sections.forEach(function (section) {
 
-            const sectionTop = section.offsetTop;
-
-            if (scrollPosition >= sectionTop) {
+            if (scrollPosition >= section.offsetTop) {
                 currentSection = section;
             }
 
         });
 
-
-        navLinks.forEach(link => {
+        navLinks.forEach(function (link) {
 
             link.classList.remove("active");
 
             if (
                 link.getAttribute("href") ===
-                `#${currentSection.id}`
+                "#" + currentSection.id
             ) {
                 link.classList.add("active");
             }
 
         });
 
-    };
+    }
 
 
     window.addEventListener(
         "scroll",
-        updateActiveSection,
+        updateActiveNavigation,
         { passive: true }
     );
 
-
-    updateActiveSection();
-
-
-    /* =========================================================
-       CLOSE MOBILE MENU / UPDATE HASH
-    ========================================================== */
-
-    navLinks.forEach(link => {
-
-        link.addEventListener("click", () => {
-
-            const targetId = link.getAttribute("href");
-
-            if (targetId && targetId.startsWith("#")) {
-
-                history.replaceState(
-                    null,
-                    "",
-                    targetId
-                );
-
-            }
-
-        });
-
-    });
+    updateActiveNavigation();
 
 });
-```
