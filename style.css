@@ -39,7 +39,7 @@ a {
     width: 250px; height: 100vh;
     padding: 45px 32px;
     border-right: 1px solid #e8e8e8;
-    background: #d8f1f8;
+    background: #ffeaed;
     display: flex;
     flex-direction: column;
     z-index: 100;
