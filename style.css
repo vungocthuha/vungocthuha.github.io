@@ -586,13 +586,17 @@ footer {
    ========================= */
 
 .sidebar-profile {
-    width: 100%;
-    margin-bottom: 24px;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .sidebar-profile img {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
     display: block;
 }
