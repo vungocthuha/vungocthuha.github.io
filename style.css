@@ -35,57 +35,39 @@ a {
 
 .sidebar {
     position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 250px;
-    height: 100vh;
-
+    top: 0; left: 0;
+    width: 250px; height: 100vh;
     padding: 45px 32px;
-
     border-right: 1px solid #e8e8e8;
-
-    background: #fff;
-
+    background: #d8f1f8;
     display: flex;
     flex-direction: column;
-
     z-index: 100;
 }
 
 .logo {
     display: block;
-
-    font-size: 17px;
-    font-weight: 600;
-
+    font-size: 17px; font-weight: 600;
     letter-spacing: -0.3px;
 }
 
 .role {
     margin-top: 6px;
-
     color: #888;
-
     font-size: 12px;
 }
 
 nav {
     display: flex;
     flex-direction: column;
-
     gap: 10px;
-
     margin-top: 55px;
 }
 
 nav a {
     width: fit-content;
-
     color: #777;
-
     font-size: 13px;
-
     transition: color 0.2s ease;
 }
 
@@ -95,11 +77,8 @@ nav a:hover {
 
 .email {
     margin-top: auto;
-
     color: #888;
-
     font-size: 11px;
-
     word-break: break-word;
 }
 
@@ -107,17 +86,14 @@ nav a:hover {
     color: #222;
 }
 
-
 /* =========================
    MAIN
 ========================= */
 
 main {
     margin-left: 250px;
-
     width: calc(100% - 250px);
 }
-
 
 /* =========================
    HERO
@@ -125,38 +101,27 @@ main {
 
 .hero {
     min-height: 100vh;
-
     max-width: 1100px;
-
     margin: 0 auto;
-
     padding: 80px 70px;
-
     display: flex;
     align-items: center;
-
     gap: 65px;
 }
 
 .hero-image {
     width: 220px;
     height: 220px;
-
     flex-shrink: 0;
-
     border-radius: 50%;
-
     overflow: hidden;
-
     background: #eee;
 }
 
 .hero-image img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     object-position: center;
 }
 
@@ -166,23 +131,16 @@ main {
 
 .eyebrow {
     margin-bottom: 8px;
-
     color: #888;
-
     font-size: 11px;
-
     letter-spacing: 1.8px;
 }
 
 .hero h1 {
     margin-bottom: 10px;
-
     font-size: 62px;
-
     font-weight: 600;
-
     line-height: 1.05;
-
     letter-spacing: -3px;
 }
 
@@ -197,21 +155,15 @@ main {
 .contact-line {
     display: flex;
     flex-wrap: wrap;
-
     align-items: center;
-
     gap: 7px;
-
     margin-bottom: 22px;
-
     color: #777;
-
     font-size: 12px;
 }
 
 .contact-line a {
     text-decoration: underline;
-
     text-underline-offset: 3px;
 }
 
@@ -221,60 +173,43 @@ main {
 
 .intro {
     max-width: 570px;
-
     color: #666;
-
     font-size: 14px;
-
     line-height: 1.9;
 }
 
 .buttons {
     display: flex;
-
     gap: 10px;
-
     margin-top: 28px;
 }
 
 .button {
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
-
     min-height: 40px;
-
     padding: 0 17px;
-
     border: 1px solid #ddd;
-
     color: #333;
-
     font-size: 12px;
-
     transition: 0.2s ease;
 }
 
 .button:hover {
     background: #222;
-
     border-color: #222;
-
     color: #fff;
 }
 
 .button.dark {
     background: #222;
-
     border-color: #222;
-
     color: #fff;
 }
 
 .button.dark:hover {
     background: #fff;
-
     color: #222;
 }
 
@@ -285,35 +220,26 @@ main {
 
 .section {
     max-width: 1100px;
-
     margin: 0 auto;
-
     padding: 100px 70px;
 }
 
 .section-title {
     display: flex;
-
     align-items: baseline;
-
     gap: 14px;
-
     margin-bottom: 38px;
 }
 
 .section-title span {
     color: #999;
-
     font-family: monospace;
-
     font-size: 11px;
 }
 
 .section-title h2 {
     font-size: 27px;
-
     font-weight: 600;
-
     letter-spacing: -0.7px;
 }
 
@@ -324,11 +250,8 @@ main {
 
 .content {
     max-width: 760px;
-
     color: #666;
-
     font-size: 14px;
-
     line-height: 1.9;
 }
 
@@ -347,23 +270,16 @@ main {
 
 .tags {
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 9px;
-
     max-width: 800px;
 }
 
 .tags span {
     padding: 8px 13px;
-
     border: 1px solid #ddd;
-
     background: #fafafa;
-
     color: #555;
-
     font-size: 12px;
 }
 
@@ -374,13 +290,9 @@ main {
 
 .entry {
     display: grid;
-
     grid-template-columns: 165px 1fr;
-
     gap: 35px;
-
     padding: 30px 0;
-
     border-top: 1px solid #e7e7e7;
 }
 
@@ -390,47 +302,34 @@ main {
 
 .date {
     color: #888;
-
     font-size: 12px;
-
     line-height: 1.6;
 }
 
 .entry h3 {
     margin-bottom: 5px;
-
     font-size: 16px;
-
     font-weight: 600;
-
     line-height: 1.5;
 }
 
 .subtitle {
     margin-bottom: 12px;
-
     color: #444;
-
     font-size: 13px;
-
     font-weight: 500;
 }
 
 .entry p {
     margin-bottom: 8px;
-
     color: #666;
-
     font-size: 13px;
 }
 
 .entry ul {
     margin-top: 10px;
-
     padding-left: 20px;
-
     color: #666;
-
     font-size: 13px;
 }
 
@@ -445,13 +344,9 @@ main {
 
 .publication {
     display: grid;
-
     grid-template-columns: 165px 1fr;
-
     gap: 35px;
-
     padding: 30px 0;
-
     border-top: 1px solid #e7e7e7;
 }
 
@@ -461,19 +356,14 @@ main {
 
 .publication h3 {
     margin-bottom: 8px;
-
     font-size: 15px;
-
     font-weight: 600;
-
     line-height: 1.6;
 }
 
 .publication p {
     margin-bottom: 5px;
-
     color: #666;
-
     font-size: 12.5px;
 }
 
@@ -489,21 +379,15 @@ main {
 .contact {
     display: flex;
     flex-direction: column;
-
     gap: 8px;
-
     color: #666;
-
     font-size: 14px;
 }
 
 .contact a {
     width: fit-content;
-
     color: #333;
-
     text-decoration: underline;
-
     text-underline-offset: 4px;
 }
 
@@ -514,13 +398,9 @@ main {
 
 footer {
     max-width: 1100px;
-
     margin: 0 auto;
-
     padding: 0 70px 35px;
-
     color: #999;
-
     font-size: 11px;
 }
 
@@ -537,13 +417,11 @@ footer {
 
     main {
         margin-left: 220px;
-
         width: calc(100% - 220px);
     }
 
     .hero {
         padding: 70px 45px;
-
         gap: 40px;
     }
 
@@ -580,12 +458,9 @@ footer {
 
     .sidebar {
         position: relative;
-
         width: 100%;
         height: auto;
-
         padding: 25px 22px;
-
         border-right: none;
         border-bottom: 1px solid #e8e8e8;
     }
@@ -593,9 +468,7 @@ footer {
     nav {
         flex-direction: row;
         flex-wrap: wrap;
-
         gap: 8px 17px;
-
         margin-top: 25px;
     }
 
@@ -605,25 +478,19 @@ footer {
 
     .email {
         display: block;
-
         margin-top: 20px;
     }
 
     main {
         width: 100%;
-
         margin-left: 0;
     }
 
     .hero {
         min-height: auto;
-
         padding: 75px 22px;
-
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 30px;
     }
 
@@ -634,15 +501,12 @@ footer {
 
     .hero h1 {
         font-size: 46px;
-
         letter-spacing: -2.5px;
     }
 
     .buttons {
         flex-direction: column;
-
         align-items: stretch;
-
         max-width: 230px;
     }
 
@@ -657,7 +521,6 @@ footer {
     .entry,
     .publication {
         display: block;
-
         padding: 25px 0;
     }
 
@@ -688,7 +551,6 @@ footer {
 
     .hero h1 {
         font-size: 40px;
-
         letter-spacing: -2px;
     }
 
@@ -711,7 +573,6 @@ footer {
 
     .tags span {
         display: inline-block;
-
         margin: 0 5px 7px 0;
     }
 
@@ -719,4 +580,19 @@ footer {
         padding-left: 20px;
         padding-right: 20px;
     }
+}
+/* =========================
+   SIDEBAR PROFILE IMAGE
+   ========================= */
+
+.sidebar-profile {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.sidebar-profile img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
 }
